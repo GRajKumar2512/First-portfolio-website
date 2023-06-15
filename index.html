@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>G.Raj Kumar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="nav__logo">
+          <img
+            src="img/crop-image-adinath.jpg"
+            alt="Raj"
+            class="nav__logo-img"
+          />
+          <div class="nav__logo-name">G.RAJ KUMAR</div>
+        </div>
+        <div class="header__main">
+          <ul class="nav__links">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">HOME</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">ABOUT</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">PROJECTS</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section id="home">
+      <div class="home-content">
+        <h1 class="home-heading">HI, I'M G.RAJ KUMAR</h1>
+        <div class="home-info">
+          <p class="text-dark">
+            A Frontend focused Web Developer building the Frontend of Websites
+            and Web Applications that leads to the success of the overall
+            product
+          </p>
+        </div>
+        <div class="home-cta">
+          <button
+            type="button"
+            class="btn btn-warning btn-lg btn-custom"
+            style="--bs-btn-padding-y: 15px; --bs-btn-padding-x: 75px"
+          >
+            PROJECTS
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="about-heading">
+        <h1>/ABOUT</h1>
+        <span class="about-subheading">
+          Here you will find more information about me, what I do, and my
+          current skills mostly in terms of programming and technology
+        </span>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h1>Get to know me!</h1>
+            <p>
+              I'm a Frontend Web Developer building the Front-end of Websites
+              and Web Applications that leads to the success of the overall
+              product. Check out some of my work in the Projects section. I also
+              like sharing content related to the stuff that I have learned over
+              the years in Web Development so it can help other people of the
+              Dev Community. Feel free to Connect or Follow me on my Linkedin
+              where I post useful content related to Web Development and
+              Programming I'm open to Job opportunities where I can contribute,
+              learn and grow. If you have a good opportunity that matches my
+              skills and experience then don't hesitate to contact me.
+            </p>
+            <button
+              type="button"
+              class="btn btn-warning btn-lg btn-custom"
+              style="--bs-btn-padding-y: 15px; --bs-btn-padding-x: 50px"
+            >
+              CONTACT
+            </button>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <h1>My Skills</h1>
+            <ul>
+              <li>html</li>
+              <li>css</li>
+              <li>javascript</li>
+              <li>nodeJS</li>
+              <li>ReactJS</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="projects__heading">
+        <h1>/Work</h1>
+        <p>Selected work I've taken on in PAST.</p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="project__card">
+              <div class="project__head">
+                <img
+                  src="img/forkify.png"
+                  alt="forkify-website"
+                  class="project-img"
+                />
+              </div>
+              <div class="project__content">
+                <p class="text-dark">Recipe-finder-application</p>
+                <a
+                  href="https://forkify-grajkumar.netlify.app"
+                  class="project__link"
+                  >Try-it !</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="project__card">
+              <div class="project__head">
+                <img
+                  src="img/mapty.png"
+                  alt="mapty-website"
+                  class="project-img"
+                />
+              </div>
+              <div class="project__content">
+                <p class="text-dark">Workout-logger-application</p>
+                <a
+                  href="https://mapty-grajkumar.netlify.app"
+                  class="project__link"
+                  >Try-it !</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="contact__heading">
+        <h1>CONTACT ME</h1>
+        <p class="text-dark">
+          Got a question or proposal, or just want to say hello? Go ahead.
+        </p>
+      </div>
+      <div class="contact__form">
+        <div class="container">
+          <form>
+            <div class="row first-row">
+              <div class="col-md-6 col-sm-12">
+                <label for="name">Your Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your email address"
+                />
+              </div>
+            </div>
+            <div class="row second-row">
+              <div class="col-md-12">
+                <label for="message">Your Message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="50"
+                  placeholder="Let's hop in together to create something valuable for this society. How soon can we discuss this ?"
+                ></textarea>
+              </div>
+            </div>
+            <div class="row third-row">
+              <div class="col-md-12">
+                <input
+                  type="submit"
+                  value="SHOOT"
+                  class="btn btn-outline-warning"
+                  style="--bs-btn-padding-x: 3rem"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer__content">
+          <h1 class="text-white">
+            This World offers so much to Explore and Learn.
+          </h1>
+        </div>
+        <div class="footer__icons"></div>
+        <div class="footer__copyright">
+          <p class="text-white">Developed by G.Raj Kumar &#169; 2K23</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
