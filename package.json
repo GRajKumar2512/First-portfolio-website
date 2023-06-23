@@ -1,11 +1,15 @@
 {
   "name": "portfolio-website",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.html",
+  "description": "This is my portfolio website",
+  "default": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "author": "G.Raj Kumar",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.9.2"
+  }
 }
