@@ -16,6 +16,10 @@ body {
   padding: 12rem 0;
 }
 
+.hidden {
+  display: none;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -80,10 +84,6 @@ body {
 
 .nav__link:hover {
   color: #ffc107;
-}
-
-.burger-menu {
-  display: none;
 }
 
 /* HOME */
@@ -383,16 +383,119 @@ footer div.footer__icons {
     font-size: 56%;
   }
 
+  .nav__links {
+    display: none;
+  }
+
+  /* button block with content*/
+  .header__mobile {
+    display: block;
+    position: relative;
+    top: 0px;
+    right: -10px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  /* checkbox positioning */
+  .header__mobile input {
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 20px;
+    top: 1px;
+    left: 1px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2; /* checkbox on top of hamburger with opacity 0 */
+    -webkit-touch-callout: none;
+  }
+
+  /* bars in the hamburger menu */
+  .header__mobile span {
+    position: relative;
+    display: block;
+    width: 25px;
+    height: 4px;
+    margin-bottom: 4px;
+    background: #333;
+    z-index: 1; /* underneath the check box*/
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+
+  .header__mobile span.bar-1 {
+    transform-origin: 0% 0%;
+  }
+
+  .header__mobile span.bar-3 {
+    transform-origin: 0% 100%;
+  }
+
+  .header__mobile input:checked ~ span.bar-1 {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background-color: #fff;
+  }
+
+  .header__mobile input:checked ~ span.bar-2 {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  .header__mobile input:checked ~ span.bar-3 {
+    opacity: 1;
+    transform: rotate(-45deg) translate(0px, -1px);
+    background-color: #fff;
+  }
+
+  /* the menu content */
+  #menu {
+    position: absolute;
+    width: 150px;
+    margin: -6.5rem 10px 10px 10px;
+    padding: 2rem;
+    padding-top: 7rem;
+
+    background: #ffc107;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+
+    transform-origin: 0% 0%;
+    transform: translate(33%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+
+  /* list items */
+  #menu li {
+    padding: 10px 0;
+    font-size: 1.6rem;
+    color: #fff;
+    font-family: "Source Code Pro", monospace;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+
+  #menu a {
+    text-decoration: none;
+  }
+
+  #menu a:hover {
+    color: #333;
+  }
+
+  .header__mobile input:checked ~ ul#menu {
+    transform: translateX(-110px);
+  }
+
   .sec-pad {
     padding: 8rem 0;
-  }
-
-  .nav__links {
-    display: none; /* Hide the navigation links by default on smaller screens */
-  }
-
-  .burger-menu {
-    display: block; /* Show the burger menu button on smaller screens */
   }
 
   .home-content {

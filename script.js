@@ -1,6 +1,11 @@
-const burgerMenu = document.querySelector(".burger-menu");
-const navLinks = document.querySelector(".nav__links");
+console.log("portfolio website");
 
-burgerMenu.addEventListener("click", () => {
-  navLinks.classList.toggle("show"); // Toggle the visibility of the navigation links
-});
+function navigateToProjects() {
+  const projectsSection = document.getElementById("projects");
+  projectsSection.scrollIntoView({ behavior: "smooth" });
+}
+
+function navigateToContacts() {
+  const contactsSection = document.getElementById("contact");
+  contactsSection.scrollIntoView({ behavior: "smooth" });
+}

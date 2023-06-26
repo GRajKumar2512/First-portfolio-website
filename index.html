@@ -56,11 +56,19 @@
             </li>
           </ul>
         </div>
-        <button class="burger-menu">
-          <span class="burger-menu__line"></span>
-          <span class="burger-menu__line"></span>
-          <span class="burger-menu__line"></span>
-        </button>
+        <div class="header__mobile hidden">
+          <input type="checkbox" />
+          <span class="bar-1"></span>
+          <span class="bar-2"></span>
+          <span class="bar-3"></span>
+
+          <ul id="menu">
+            <a href="#home"><li>HOME</li></a>
+            <a href="#about"><li>ABOUT</li></a>
+            <a href="#projects"><li>PROJECTS</li></a>
+            <a href="#contact"><li>CONTACT</li></a>
+          </ul>
+        </div>
       </nav>
     </header>
     <section id="home">
@@ -78,6 +86,7 @@
             type="button"
             class="btn btn-warning btn-lg btn-custom"
             style="--bs-btn-padding-y: 15px; --bs-btn-padding-x: 75px"
+            onclick="navigateToProjects()"
           >
             PROJECTS
           </button>
@@ -126,6 +135,7 @@
               type="button"
               class="btn btn-warning btn-lg btn-custom"
               style="--bs-btn-padding-y: 15px; --bs-btn-padding-x: 50px"
+              onclick="navigateToContacts()"
             >
               CONTACT
             </button>
