@@ -10,6 +10,7 @@ html {
 
 body {
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 .sec-pad {
@@ -383,6 +384,10 @@ footer div.footer__icons {
     font-size: 56%;
   }
 
+  body {
+    overflow-x: hidden;
+  }
+
   .nav__links {
     display: none;
   }
@@ -470,6 +475,8 @@ footer div.footer__icons {
     transform: translate(33%, 0);
 
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+
+    overflow-x: hidden;
   }
 
   /* list items */
